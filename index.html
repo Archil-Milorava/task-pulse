@@ -11,11 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" href="./assets/logos/LogoIpsum.svg" as="image" />
+    <link
+      rel="preload"
+      href="./assets/bg/bgMainMobile.svg"
+      as="image"
+      media="(max-width: 480px)"
+    />
+    <link
+      rel="preload"
+      href="./assets/bg/bgMain.svg"
+      as="image"
+      media="(min-width: 481px)"
+    />
     <title>PulsePoint Sportsbook - 300% Bonus</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <img
         src="./assets/logos/LogoIpsum.svg"
         alt="PulsePoint Logo"
@@ -27,21 +40,12 @@
 
     <main>
       <section class="hero">
-        <div class="hero-background">
-          <img
-            src="/assets/bg/bgMain.svg"
-            alt="hero background"
-            class="hero-bg desktop-bg"
-            role="presentation"
-          />
-          <img
-            src="/assets/bg/bgMainMobile.svg"
-            alt="hero background mobile"
-            class="hero-bg mobile-bg"
-            role="presentation"
-          />
-        </div>
-
+        <img
+          src="/assets/bg/bgMainMobile.svg"
+          alt="mobilebg"
+          class="mobile-bg"
+        />
+        <img src="/assets/bg/bgMain.svg" alt="hero" class="hero-bg" />
         <div class="hero-content container">
           <h1 class="hero-heading">celebrate sportsbook 300% bonus</h1>
           <p class="hero-text">
