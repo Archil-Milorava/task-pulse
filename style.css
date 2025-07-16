@@ -480,9 +480,9 @@ footer {
   cursor: pointer;
 }
 
-.footer-card-two:hover img {
+.footer-card-two:hover {
   transition-duration: 300ms;
-  transform: scale(1.2);
+  transform: scale(0.98);
 }
 
 .footer-card-two h1 {
