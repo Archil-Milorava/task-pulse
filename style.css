@@ -192,13 +192,13 @@ body {
   padding: var(--spacing-lg);
   min-width: 240px;
   flex: 1;
-  transition: var(--transition);
   cursor: pointer;
 }
 
 .promotion-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition-duration: 300ms;
 }
 
 .promotion-icon {
@@ -268,7 +268,7 @@ body {
 /* Grid Container */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+  grid-template-columns: repeat(2, 1fr); 
   gap: var(--spacing-md);
   padding: var(--spacing-xl);
   max-width: 1200px;
@@ -619,11 +619,11 @@ footer {
     text-align: center;
   }
   .grid-container {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr; 
   }
 
   .card-btn {
-    display: none; /* Hide button on tablet/mobile */
+    display: none; 
   }
 }
 
