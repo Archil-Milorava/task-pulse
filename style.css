@@ -165,17 +165,13 @@ body {
 }
 
 /* Promotion Section Styles */
-.promotion-section {
-  background-color: var(--color-dark-alt);
-  padding: var(--spacing-md) 0;
-}
 
 .promotion-cards {
+  background: var(--color-dark-alt);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  gap: var(--spacing-md);
+  justify-content: space-around;
+  gap: 10px;
 }
 
 .promotion-card {
@@ -184,8 +180,7 @@ body {
   gap: var(--spacing-md);
   border-radius: 12px;
   padding: var(--spacing-lg);
-  min-width: 240px;
-  flex: 1;
+
   cursor: pointer;
 }
 
@@ -220,13 +215,6 @@ body {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.5;
-}
-
-.promotion-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-accent);
 }
 
 .divider-section {
@@ -427,8 +415,11 @@ footer {
 
 .partners-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  height: auto;
   gap: 40px;
   padding-bottom: var(--spacing-lg);
+  overflow: hidden;
 }
 
 .footer-card-one {
@@ -463,8 +454,22 @@ footer {
   opacity: 0.8;
 }
 
+/* .partners-container{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+} */
+.extra {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .partners-wrapper2 {
   display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -600,7 +605,7 @@ footer {
   }
   .promotion-cards {
     flex-direction: column;
-    align-items: stretch;
+    padding: var(--spacing-lg) 0;
   }
 
   .promotion-arrow {
@@ -611,6 +616,7 @@ footer {
   .promotion-card {
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
   .grid-container {
     grid-template-columns: 1fr;
@@ -618,6 +624,13 @@ footer {
 
   .card-btn {
     display: none;
+  }
+  .partners-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -651,9 +664,7 @@ footer {
     width: 154px;
     height: 24px;
   }
-  .promotion-cards {
-    gap: var(--spacing-xl);
-  }
+
   .card-btn {
     display: none;
   }
@@ -680,6 +691,8 @@ footer {
 
   .partners-wrapper {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 30px;
   }
   .footer-card-two {
@@ -699,7 +712,7 @@ footer {
     gap: 10px;
   }
   .footer-card-two-info p {
-    font-size: 10px;
+    font-size: 9px;
     margin-top: var(--spacing-xs);
   }
   .terms-conditions {
