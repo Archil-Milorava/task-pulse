@@ -57,8 +57,8 @@ body {
   position: absolute;
   width: 231px;
   height: 37px;
-  top: var(--spacing-lg);
-  left: var(--spacing-lg);
+  top: var(--spacing-xl);
+  left: var(--spacing-xl);
   z-index: 100;
 }
 
@@ -66,7 +66,7 @@ body {
 .hero {
   position: relative;
   background-color: var(--color-dark);
-  min-height: 100vh;
+  min-height: 125vh;
   max-height: 856px;
   overflow: hidden;
   display: flex;
@@ -98,12 +98,6 @@ body {
   display: none;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 var(--spacing-md);
-  margin: 0 auto;
-}
 
 .hero-content {
   position: absolute;
@@ -127,6 +121,7 @@ body {
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.2;
   margin-bottom: var(--spacing-lg);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text {
@@ -268,7 +263,7 @@ body {
 /* Grid Container */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-md);
   padding: var(--spacing-xl);
   max-width: 1200px;
@@ -320,14 +315,14 @@ body {
   background-color: var(--color-white);
 }
 
-.chooUs-cards {
+.chooseUs-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--spacing-lg);
   padding-bottom: var(--spacing-xxl);
 }
-.chooUs-card {
+.chooseUs-card {
   width: 316px;
   min-height: 274px;
   padding: var(--spacing-xl);
@@ -341,12 +336,12 @@ body {
   cursor: pointer;
 }
 
-.chooUs-card:hover {
+.chooseUs-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.chooUs-card h1 {
+.chooseUs-card h1 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
@@ -355,7 +350,7 @@ body {
   margin: var(--spacing-md) 0 var(--spacing-sm);
 }
 
-.chooUs-card p {
+.chooseUs-card p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -619,11 +614,11 @@ footer {
     text-align: center;
   }
   .grid-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
   .card-btn {
-    display: none; 
+    display: none;
   }
 }
 
@@ -705,7 +700,7 @@ footer {
     gap: 10px;
   }
   .footer-card-two-info p {
-    font-size: 8px;
+    font-size: 10px;
     margin-top: var(--spacing-xs);
   }
   .terms-conditions {
