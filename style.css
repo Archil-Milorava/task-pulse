@@ -98,7 +98,6 @@ body {
   display: none;
 }
 
-
 .hero-content {
   position: absolute;
   z-index: 10;
@@ -658,7 +657,7 @@ footer {
   .card-btn {
     display: none;
   }
-  .partners-wrapper {
+  .partners-container {
     flex-direction: column;
     align-items: center;
     gap: 40px;
@@ -679,7 +678,7 @@ footer {
     gap: 5px;
   }
 
-  .partners-wrapper2 {
+  .partners-wrapper {
     display: flex;
     gap: 30px;
   }
