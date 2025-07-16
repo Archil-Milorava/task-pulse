@@ -636,7 +636,7 @@ footer {
   .hero {
     position: relative;
     background-color: var(--color-dark);
-    min-height: 125vh;
+    min-height: 121vh;
     overflow: hidden;
     display: flex;
     align-items: center;
